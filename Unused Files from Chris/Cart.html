@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopping Cart</title>
+		<!-- Help from this video: https://www.youtube.com/watch?v=6JCyMPfRxoM&t=513s -->
+		<link href="cart-styles.css" rel="stylesheet"> <!-- Linking the CSS File (RH) -->
+	</head>
+
+	<body>
+		<!-- Creating div tags which are then styled. (CK) -->
+		<div class="container">
+			<h1>Shopping Cart</h1> <!-- Will be displayed at the top of the page. (CK) -->
+			<div class="cart">
+				<div class="products">
+					<!-- Product 1  (CK)-->
+					<div class="product">
+						<img src="Teddy1.jpg">
+						<div class="product-info">
+							<!-- Name, price, offer, quantity, and remove option created. (CK) -->
+							<h3 class="product-name">Crocodile cuddly toy 200cm</h3>
+							<h4 class="product-price">€29.99</h4>
+							<h4 class="product-offer">20% discount "Summer" applied</h4>
+							<!-- Can change the value based on how many the user wishes to purchase. (CK) -->
+							<p class="product-quantity">Qnt: <input value="1" name="">
+							<p class="product-remove">
+								<span class="remove">Remove</span>
+							</p>
+						</div>
+					</div>
+					<!-- Product 2. (CK)  -->
+					<div class="product">
+						<img src="Teddy2.jpg">
+						<div class="product-info">
+							<!-- Name, price, offer, quantity, and remove option created. (CK) -->
+							<h3 class="product-name">Blue Shark cuddly toy 250cm</h3>
+							<h4 class="product-price">€39.99</h4>
+							<h4 class="product-offer">20% discount "Summer" applied</h4>
+							<p class="product-quantity">Qnt: <input value="1" name="">
+							<p class="product-remove">
+								<span class="remove">Remove</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Creating a new div for the cart total which will display the final price and number of items. (CK) -->
+				<div class="cart-total">
+					<p>
+						<span>Total Price with discount</span>
+						<!-- How much the user saved. (CK) -->
+						<span>€69.98</span>
+					</p>
+					<p>
+						<!-- Number of items user has in basket. (CK) -->
+						<span>Number of Items</span>
+						<span>2</span>
+					</p>
+					<p>
+						<span>You Save</span>
+						<span>€13.96</span>
+					</p>
+					
+					<!-- Allows the user to proceed to checkout. (CK) -->
+					<a href="#">Proceed to Checkout</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
