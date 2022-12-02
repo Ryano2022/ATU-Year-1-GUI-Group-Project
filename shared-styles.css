@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&display=swap'); /* I'm trying to get an outlined font for the title of the site. (RH) */
+
+/* Setting the background of the page to be a light blue-ish colour since I think it goes well with the idea of teddies. (RH) */
+body{
+	background-color: #94dddf;
+}
+
+/* Setting the background of the background boxes (RH) */
+#background-box{
+	background-color: #3abcc1;
+}
+/* For giving a more readable, bold looking font. (RH) */
+#outline{
+	color: #ffffff;
+	-webkit-text-stroke: 1.5px black; /* Taken from https://www.educba.com/css-text-outline/ */
+	font-family: 'Erica One', cursive;
+}
+
+/* Removing the underline on the links. (RH) */
+a:link{text-decoration: none;}
+a:visited{text-decoration: none;}
+a:hover{text-decoration: none; font-weight: bold;}
+a:active{text-decoration: none;} 
+
+/* Made this to set all the boxes to the same dimensions and style. (RH) */ 
+#browse-boxes{
+	width: 350px;
+	height: 200px;
+	border: 5px ridge #94dddf;
+}

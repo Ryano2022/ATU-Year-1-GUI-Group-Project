@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--  Icon for the browser tab. (NE) -->
+		<link rel="shortcut icon" type="image/x-icon" href="images/icon-teddy.ico">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link href="shared-styles.css" rel="stylesheet"> <!-- Linking the CSS File (RH) -->
+		<title>Logging In - Stuffed Toys Shop</title>
+	</head>
+	
+	<body>
+		<!-- Thing I assume is required for bootstrap to work. (RH) -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<!-- Link to shared JavaScript page. (NE)-->
+		<script src="shared-scripts.js"></script>
+		<div class="container">
+			<div class="row mt-2 g-2">
+				<!-- Title of the website. Also made it so when you click on the title on pages other than the main, it brings you to main. (RH) -->
+				<a class="text-center h1" id="outline" href="main.html">Stuffed Toys Shop</a> 
+			</div> <!-- Row -->
+			<div class="row mt-2 g-2">
+				 <!-- All within this nav tag taken from the template on the bootstrap website and edited for our own page. (RH) -->
+				<nav class="navbar navbar-expand-lg navbar-light" id="background-box">
+				  <div class="container-fluid">
+					<a class="navbar-brand text-white" href="#"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+						  <a class="nav-link text-white" href="main.html">Homepage</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link text-white" href="who.html">Account</a>
+						</li>
+						<li class="nav-item">
+						  <a class="nav-link text-white" href="cart.html">Cart</a>
+						</li>
+					  </ul>
+					</div>
+				  </div>
+				</nav>
+				</div> <!-- Row -->					
+			<!-- I'd like to use this as a background box for the site. So theres a background to the background thats bright but then another background thats a rounded box to make it a bit more readable with white text. (RH) -->
+			<div class="row mt-2 g-2 rounded-3" id="background-box">
+				<!-- Creating the actual login table. (NE) -->
+				<table class="text-center mb-3">
+					<tr>
+						<td>
+							<input id="email" class="text-center mt-1 rounded-2" placeholder="Enter Your Email" type="email">
+						</td>
+					</tr> <!-- Table Row -->
+					<tr>
+						<td>
+							<input id="password" class="text-center rounded-2" placeholder="Enter Your Password" type="password">
+						</td>
+					</tr> <!-- Table Row -->
+					<tr> 
+						<td><!--Buttons for verification JavaScript. (NE)-->
+							<button id="loginButton">Log-in</button>
+							<button id="createButton">Register Now!</button> 
+						</td>
+					</tr> <!-- Table Row -->
+				</table> <!-- Table -->
+			</div> <!-- Row -->
+		</div> <!-- Container -->
+	</body>
+</html>
+
+<script>
+// (NE)(RH)
+
+//
+document.getElementById("loginButton").addEventListener("click",login);
+
+//Takes user to registration page when "Register Now" is pressed. (NE)
+document.getElementById("createButton").addEventListener("click",register);
+
+//Takes user to the register page. (NE)
+function register() {
+	window.location.href="register.html";
+}
+</script>
