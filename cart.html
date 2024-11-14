@@ -1,60 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<!--  Icon for the browser tab. (NE) -->
-		<link rel="shortcut icon" type="image/x-icon" href="images/icon-teddy.ico">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<link href="shared-styles.css" rel="stylesheet"> <!-- Linking the CSS File (RH) -->
-		<title>Viewing the Cart - Stuffed Toys Shop</title>
+		<title>Shopping Cart</title>
+		<!-- Help from this video: https://www.youtube.com/watch?v=6JCyMPfRxoM&t=513s -->
+		<link href="cart-styles.css" rel="stylesheet"> <!-- Linking the CSS File (RH) -->
 	</head>
-	
+
 	<body>
-		<!-- Thing I assume is required for bootstrap to work. (RH) -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-		
-		<div class="container"> 
-			<div class="row mt-2 g-2">
-				<!-- Title of the website. Also made it so when you click on the title on pages other than the main, it brings you to main. (RH) -->
-				<a class="text-center h1" id="outline" href="main.html">Stuffed Toys Shop</a> 
-			</div> <!-- Row -->
-			<div class="row mt-2 g-2">
-				<!-- All within this nav tag taken from the template on the bootstrap website and edited for our own page. (RH) -->
-				<nav class="navbar navbar-expand-lg navbar-light" id="background-box">
-				  <div class="container-fluid">
-					<a class="navbar-brand text-white" href="#"></a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					  <span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-						  <a class="nav-link text-white" href="main.html">Homepage</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link text-white" href="who.html">Account</a>
-						</li>
-						<li class="nav-item">
-						  <a class="nav-link disabled text-white h6" aria-current="page" href="cart.html">Cart</a>
-						</li>
-					  </ul>
+		<!-- Creating div tags which are then styled. (CK) -->
+		<div class="container">
+			<h1>Shopping Cart</h1> <!-- Will be displayed at the top of the page. (CK) -->
+			<div class="cart">
+				<div class="products">
+					<!-- Product 1  (CK)-->
+					<div class="product">
+						<img src="Teddy1.jpg">
+						<div class="product-info">
+							<!-- Name, price, offer, quantity, and remove option created. (CK) -->
+							<h3 class="product-name">Crocodile cuddly toy 200cm</h3>
+							<h4 class="product-price">€29.99</h4>
+							<h4 class="product-offer">20% discount "Summer" applied</h4>
+							<!-- Can change the value based on how many the user wishes to purchase. (CK) -->
+							<p class="product-quantity">Qnt: <input value="1" name="">
+							<p class="product-remove">
+								<span class="remove">Remove</span>
+							</p>
+						</div>
 					</div>
-				  </div>
-				</nav> 
-			</div> <!-- Row -->
-			<!-- I'd like to use this as a background box for the site. So theres a background to the background thats bright but then another background thats a rounded box to make it a bit more readable with white text. (RH) -->
-			<div class="row mt-2 g-2 rounded-3" id="background-box">
-				<!-- Will be displayed at the top of the page. (CK) -->
-				<p class="text-center text-white h3" id="outline">Shopping Cart</p>
-				
-			</div> <!-- Row -->
-			<div class="row mt-2 g-2 rounded-3" id="background-box">
-			</div> <!-- Row -->
-		</div> <!-- Container -->
+					<!-- Product 2. (CK)  -->
+					<div class="product">
+						<img src="Teddy2.jpg">
+						<div class="product-info">
+							<!-- Name, price, offer, quantity, and remove option created. (CK) -->
+							<h3 class="product-name">Blue Shark cuddly toy 250cm</h3>
+							<h4 class="product-price">€39.99</h4>
+							<h4 class="product-offer">20% discount "Summer" applied</h4>
+							<p class="product-quantity">Qnt: <input value="1" name="">
+							<p class="product-remove">
+								<span class="remove">Remove</span>
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- Creating a new div for the cart total which will display the final price and number of items. (CK) -->
+				<div class="cart-total">
+					<p>
+						<span>Total Price with discount</span>
+						<!-- How much the user saved. (CK) -->
+						<span>€69.98</span>
+					</p>
+					<p>
+						<!-- Number of items user has in basket. (CK) -->
+						<span>Number of Items</span>
+						<span>2</span>
+					</p>
+					<p>
+						<span>You Save</span>
+						<span>€13.96</span>
+					</p>
+					
+					<!-- Allows the user to proceed to checkout. (CK) -->
+					<a href="#">Proceed to Checkout</a>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
-
-<script>
-
-</script>
